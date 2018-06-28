@@ -1,0 +1,19 @@
+server:
+  port: 9100
+eureka:
+  client:
+      service-url:
+        defaultZone: http://shanbing:top@peer1:9100/eureka/,http://shanbing:top@peer2:9101/eureka/
+  instance:
+    hostname: peer1
+  server:
+    #关闭自我保护，确保不可用服务剔除（开发环境）
+    enable-self-preservation: false
+    #清理间隔
+    eviction-interval-timer-in-ms: 5000  #(5秒 开发)
+
+security:
+  user:
+    name: shanbing
+    password: top
+    #roles: SUPERUSER
