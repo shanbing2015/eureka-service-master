@@ -7,6 +7,15 @@ spring:
     encoding:
       #防止中文乱码
       force: true
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shanbing2015/config-repository/
+          username: shanbing2015
+          password: shan123456
+          searchPaths: conf
+        label: master
 
 eureka:
   client:
