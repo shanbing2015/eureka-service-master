@@ -13,7 +13,7 @@ spring:
         git:
           uri: https://github.com/shanbing2015/config-repository/
           username: shanbing2015
-          password: shan123456
+          password: **********
           searchPaths: conf
         label: master
 
